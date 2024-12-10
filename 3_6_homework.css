@@ -1,0 +1,9 @@
+body,html{
+    margin: 0;
+}
+header{
+    background-color: blue; color: white;
+}
+a:visited{
+    color:white;
+}
