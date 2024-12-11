@@ -1,0 +1,27 @@
+*{
+    margin: 0; padding: 0;
+}
+.wrap{
+    width: 960px; margin: 0 auto;
+}
+header{
+    background-color: #0fc;
+}
+header h1{
+    background-color: blue; width: 40%; line-height: 60px; margin: 0 auto; text-align: center;
+}
+header h1 a{
+    color: white; text-decoration: none;
+}
+header nav{
+    background-color: skyblue;
+}
+header nav ul{
+    text-align: center;
+}
+header nav ul li{
+    display: inline-block; line-height: 60px;
+}
+header .searchArea{
+    position: absolute;
+}
