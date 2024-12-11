@@ -31,8 +31,11 @@
 .wrap header .searchArea{
     position: absolute; top: 45px; right: 0;
 }
+.wrap header .searchArea input{
+    border: 1px solid black; line-height: 30px;
+}
 .wrap header .searchArea input#searchText{
-    background-color: lightcoral; width: 80%; line-height: 20px; border: 1px solid black;
+    background-color: lightcoral;
 }
 .wrap section h2{
     margin-bottom: 50px;
