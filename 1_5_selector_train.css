@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+}
+.wrap{
+    max-width: 960px; min-width: 480px; margin: 0 auto;
+}
+.wrap header h1{
+    margin: 0; line-height: 50px; color: #888; font-size: 32px;
+}
+.wrap nav div{
+    text-align: right;
+}
+.wrap nav div a{
+    color: green; font-size: 24px;
+}
+.wrap nav fieldset{
+    margin: 0; padding: 0; width: 100%; line-height: 50px;
+    border-top: 2px solid green; border-bottom: 1px solid green;
+    border-left: none; border-right: none; box-sizing: border-box;
+    position: relative;
+}
+.wrap nav fieldset form input[type="search"]{
+    background-color: #0f8; border: 1px solid green; line-height: 25px;
+}
+.wrap nav fieldset form input[type="submit"]{
+    background-color: #463; border: 2px solid #0c3; color: white; line-height: 25px;
+}
+.wrap nav fieldset form select{
+    height: 30px; position: absolute; right: 0; top: 10px;
+    background-color: #0cb; border: 1px solid #0ed; box-sizing: border-box;
+}
+.wrap section h2{
+    margin: 0; font-size: 28px; color: #555;
+    border-bottom: 3px solid green; line-height: 100px;
+}
+.wrap section h2 span{
+    color: green;
+}
+.wrap section article{
+    position: relative;
+    width: 100%;
+}
+.wrap section article ul{
+    list-style: none; margin: 0; padding: 0; line-height: 40px;
+    position: relative; width: 100%;
+}
+.wrap section article ul:after{
+    content: ''; display: block; clear: both;
+}
+.wrap section article ul li{
+    float: left; width: 25%;
+}
+.wrap section article div:first-child{
+    line-height: 50px; border-bottom: 1px solid green;
+}
+.wrap section article div:not(:first-child){
+    border-bottom: 1px solid violet;
+}
+.wrap section article div:nth-of-type(2n){
+    background-color: #ccc;
+}
+.wrap section article a{
+    text-decoration: none; color: black; display: block;
+}
+.wrap section article a.newA{
+    position: absolute; right: 0; width: 35px;
+    background-color: #8f0; text-align: center; font-size: 12px;
+}
+.wrap section .pageNumb{
+    text-align: center;
+}
+.wrap section .pageNumb a{
+    text-decoration: none; color: blue;
+}
+.wrap section .pageNumb ul{
+    list-style: none; margin: 0; padding: 0; display: inline;
+}
+.wrap section .pageNumb ul:after{
+    content: ''; display: inline; clear: both;
+}
+.wrap section .pageNumb ul li{
+    float: left; margin-left: 20px;
+}
