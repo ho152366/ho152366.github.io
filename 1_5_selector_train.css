@@ -2,16 +2,17 @@ body{
     margin: 0;
 }
 .wrap{
-    max-width: 960px; min-width: 480px; margin: 0 auto;
+    width: 80%; min-width: 480px; margin: 0 auto;
 }
 .wrap header h1{
-    margin: 0; line-height: 50px; color: #888; font-size: 32px;
+    margin: 0; line-height: 60px; color: #888; font-size: 32px;
 }
-.wrap nav div{
-    text-align: right;
+.wrap header .logoArea{
+    position: relative;
 }
-.wrap nav div a{
+.wrap header .logoArea a{
     color: green; font-size: 24px;
+    position: absolute; right: 0; bottom: 0;
 }
 .wrap nav fieldset{
     margin: 0; padding: 0; width: 100%; line-height: 50px;
@@ -26,7 +27,7 @@ body{
     background-color: #463; border: 2px solid #0c3; color: white; line-height: 25px;
 }
 .wrap nav fieldset form select{
-    height: 30px; position: absolute; right: 0; top: 10px;
+    min-width: 140px; width: 25%; height: 30px; position: absolute; right: 0; top: 10px;
     background-color: #0cb; border: 1px solid #0ed; box-sizing: border-box;
 }
 .wrap section h2{
@@ -37,8 +38,7 @@ body{
     color: green;
 }
 .wrap section article{
-    position: relative;
-    width: 100%;
+    position: relative; width: 100%; margin-bottom: 50px;
 }
 .wrap section article ul{
     list-style: none; margin: 0; padding: 0; line-height: 40px;
@@ -48,13 +48,21 @@ body{
     content: ''; display: block; clear: both;
 }
 .wrap section article ul li{
-    float: left; width: 25%;
+    float: left; font-size: 14px;
+}
+.wrap section article ul li.firstLi,
+.wrap section article ul li.thirdLi,
+.wrap section article ul li.fourthLi{
+    width: 20%;
+}
+.wrap section article ul li.secondLi{
+    width: 40%;
 }
 .wrap section article div:first-child{
     line-height: 50px; border-bottom: 1px solid green;
 }
 .wrap section article div:not(:first-child){
-    border-bottom: 1px solid violet;
+    border-bottom: 1px solid #a0f;
 }
 .wrap section article div:nth-of-type(2n){
     background-color: #ccc;
@@ -63,21 +71,24 @@ body{
     text-decoration: none; color: black; display: block;
 }
 .wrap section article a.newA{
-    position: absolute; right: 0; width: 35px;
-    background-color: #8f0; text-align: center; font-size: 12px;
+    position: absolute; right: 0; width: 32px; line-height: 20px;
+    background-color: #8f0; text-align: center; font-size: 10px;
 }
 .wrap section .pageNumb{
-    text-align: center;
+    margin: 0 auto;
 }
 .wrap section .pageNumb a{
-    text-decoration: none; color: blue;
+    text-decoration: none; color: balck; font-size: 14px
 }
 .wrap section .pageNumb ul{
-    list-style: none; margin: 0; padding: 0; display: inline;
-}
-.wrap section .pageNumb ul:after{
-    content: ''; display: inline; clear: both;
+    list-style: none; margin: 0; padding: 0; text-align: center;
 }
 .wrap section .pageNumb ul li{
-    float: left; margin-left: 20px;
+    display: inline-block;
+}
+.wrap section .pageNumb ul li.pageMargin{
+    margin-left: 20px;
+}
+.wrap section .pageNumb ul li.ltgtMargin{
+    margin-left: 50px;
 }
