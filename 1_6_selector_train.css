@@ -1,0 +1,88 @@
+body{
+    width: 80%; margin: 0 auto; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul{
+    margin: 20px 0 0; padding: 0; list-style: none;
+    border-bottom: 1px solid red;
+}
+ul li:after{
+    content: ''; display: block; clear: both;
+}
+ul li a{
+    text-decoration: none; display: block;
+}
+ul li:first-child{
+    background-color: #555; border-bottom: 1px solid red;
+}
+ul li:nth-of-type(2n){
+    background-color: #f8f8f8;
+}
+ul li:nth-of-type(2n+3){
+    background-color: #ddd;
+}
+ul li:nth-of-type(2n):hover{
+    background-color: orange;
+}
+ul li:nth-of-type(2n+3):hover{
+    background-color: darkblue;
+}
+ul li span{
+    display: block; float: left; padding: 15px 2.5%; font-size: 16px;
+}
+ul li span:not(:nth-of-type(2)){
+    color: #999;
+}
+ul li:first-child span:nth-of-type(2){
+    color: springgreen;
+}
+ul li:not(:first-child) span:nth-of-type(2){
+    color: orangered;
+}
+ul li:not(:first-child):hover span:not(:nth-of-type(2)){
+    color: cyan;
+}
+ul li:nth-of-type(2n):hover span:nth-of-type(2){
+    color: white;
+}
+ul li span:nth-of-type(2n){
+    width: 30%;
+}
+ul li span:nth-of-type(2n+1){
+    width: 10%;
+}
+.pager{
+    width: 50%; padding: 0 3%; margin: 15px auto; position: relative; line-height: 30px; text-align: center;
+}
+.pager a{
+    text-decoration: none; font-size: 14px; display: block; color: black;
+}
+.pager > a{
+    position: absolute; top: 0; width: 3%;
+}
+.pager > a:first-of-type{
+    left: 0;
+}
+.pager > a:last-of-type{
+    right: 0;
+}
+.pager ol{
+    margin: 0; padding: 0;
+}
+.pager ol:after{
+    content: ''; display: block; clear: both;
+}
+.pager ol li{
+    display: block; float: left; width: 9%;
+}
+.pager ol li:not(:first-child){
+    margin-left: 1.11%;
+}
+.pager ol li a:hover{
+    background-color: darkviolet; color: violet; border-radius: 5px;
+}
+form fieldset{
+    margin: 0; padding: 0; border: none; text-align: center;
+}
+form fieldset input[type='submit']{
+    background-color: #edf; color: darkviolet; border: 1px solid darkviolet;
+}
