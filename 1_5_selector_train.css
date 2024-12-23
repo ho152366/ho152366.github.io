@@ -58,6 +58,9 @@ body{
 .wrap section article ul li.secondLi{
     width: 38%; margin-left: 2%;
 }
+.wrap section article .newObject{
+    position: relative;
+}
 .wrap section article div:first-child{
     line-height: 50px; border-bottom: 1px solid green;
 }
