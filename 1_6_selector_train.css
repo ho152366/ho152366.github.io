@@ -27,7 +27,7 @@ ul li:nth-of-type(2n+3):hover{
     background-color: darkblue;
 }
 ul li span{
-    display: block; float: left; padding: 15px 2.5%; font-size: 16px;
+    display: block; float: left; padding: 15px 2.5%; font-size: 16px; word-break: break-all;
 }
 ul li span:not(:nth-of-type(2)){
     color: #999;
