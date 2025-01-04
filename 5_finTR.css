@@ -1,0 +1,51 @@
+body{
+    margin: 0 auto; width: 90%;
+}
+aside{
+    width: 50%; float: left; margin-top: 10%;
+}
+aside p{
+    padding-right: 10%;
+}
+aside p strong{
+    display: block;
+}
+aside footer{
+    color: blue;
+}
+aside:nth-of-type(2) ul{
+    margin: 0; padding: 0; list-style: none; text-align: right;
+}
+aside:nth-of-type(2) ul li{
+    position: relative; padding: 3% 20% 3% 3%; cursor: pointer;
+}
+aside:nth-of-type(2) ul li p{
+    margin: 0;
+}
+aside ul li:nth-child(1){background-color: #f00;}
+aside ul li:nth-child(2){background-color: #f60;}
+aside ul li:nth-child(3){background-color: #ff0;}
+aside ul li:nth-child(4){background-color: #0f0;}
+aside ul li:nth-child(5){background-color: #08f;}
+aside ul li:nth-child(6){background-color: #30f;}
+aside ul li:nth-child(7){background-color: #80f;}
+
+aside ul li p{
+    overflow: hidden; height: 0px; display: inline-block; transition-duration: 0.5s;
+}
+aside ul li:hover p{
+    height: 400px;
+}
+aside ul li a{
+    position: absolute; right: 3%; bottom: 0; line-height: 50px;
+    text-decoration: none; color: #fff;
+}
+aside ul li:hover a{
+    color: black;
+}
+aside ul li a::before{
+    content: '+';
+}
+aside ul li:hover a::before{
+    content: '>';
+}
